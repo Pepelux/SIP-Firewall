@@ -1,6 +1,6 @@
 # What is SIP Firewall? #
 
-SIP Firewall es un firewall para sistemas de VoIP que permite filtrar aquellas conexiones que vayan a tu centralita, de forma que bloquee ataques basándose en determinados parámetros como país de procedencia, dirección IP, usuario, dominio, userAgent, etc.
+SIP Firewall is a firewall for VoIP systems that allows filtering those connections that go to your PBX, so that it blocks attacks based on certain parameters such as origin country, IP address, user, domain, user-agent, etc.
 
 # Technology #
 
