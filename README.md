@@ -6,7 +6,7 @@ SIP Firewall is a firewall for VoIP systems that allows filtering those connecti
 
   * _**Backend**_ Backend managed with Kamailio 5 + MariaDB + PHP 7 (for the Rest API).
 
-  * _**frontend**_ Frontend programmed with Angular 6 + Bootstrap 4 + Typescript.
+  * _**Frontend**_ Frontend programmed with Angular 6 + Bootstrap 4 + Typescript.
 
 # Installation #
 
