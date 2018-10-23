@@ -13,11 +13,7 @@ SIP Firewall es un firewall para sistemas de VoIP que permite filtrar aquellas c
 Download of all components:
 ```
 # cd /usr/local/src
-# mkdir firewall
-# cd firewall
-# svn co https://github.com/Pepelux/SIP-Firewall.git/config
-# svn co https://github.com/Pepelux/SIP-Firewall.git/apirest
-# svn co https://github.com/Pepelux/SIP-Firewall.git/web
+# svn co https://github.com/Pepelux/SIP-Firewall.git
 ```
 Install MariaDB and create database and users for Kamailio and web. Please choose strong passwords for all users:
 ```
@@ -39,7 +35,7 @@ Query OK, 0 rows affected (0.00 sec)
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON security.* TO 'security'@'localhost';
 Query OK, 0 rows affected (0.00 sec)
 
-# mysql -u root -p security < /usr/local/src/firewall/config/security.sql
+# mysql -u root -p security < /usr/local/src/SIP-Firewall/config/security.sql
 ```
 
 Install Kamailio:
@@ -51,8 +47,8 @@ Install Kamailio:
 
 # apt-get install kamailio kamailio-geoip-modules kamailio-mysql-modules kamailio-tls-modules
 # cd /etc/kamailio
-# cp /usr/local/src/firewall/config/kamailio.cfg .
-# cp /usr/local/src/firewall/config/kamailio_default /etc/default/kamailio
+# cp /usr/local/src/SIP-Firewall/config/kamailio.cfg .
+# cp /usr/local/src/SIP-Firewall/config/kamailio_default /etc/default/kamailio
 ```
 
 Edit kamailio.cfg and change some values:
@@ -83,8 +79,8 @@ Install Apache and PHP:
 # apt-get install apache2 php
 # cd /var/www/html
 # mkdir apirest
-# cp /usr/local/src/firewall/apirest/* apirest/
-# cp -r /usr/local/src/firewall/web/* .
+# cp /usr/local/src/SIP-Firewall/apirest/* apirest/
+# cp -r /usr/local/src/SIP-Firewall/web/* .
 ```
 
 Configure database access from the API Rest. Edit apirest/conecta.php file and change IP address and password:
