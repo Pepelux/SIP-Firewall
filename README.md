@@ -37,6 +37,12 @@ Query OK, 0 rows affected (0.00 sec)
 
 # mysql -u root -p security < /usr/local/src/SIP-Firewall/config/security.sql
 ```
+If you want you can import blacklist and destinations data from some templates:
+```
+# mysql -u root -p security < /usr/local/src/SIP-Firewall/config/templates/blacklist_data.sql
+
+# mysql -u root -p security < /usr/local/src/SIP-Firewall/config/templates/destinations_data.sql
+```
 
 Install Kamailio:
 ```
