@@ -195,7 +195,7 @@ CREATE TABLE `web_users` (
 --
 
 INSERT INTO `web_users` (`id`, `login`, `password`, `name`, `enabled`) VALUES
-(2, 'admin', '6a850aee2a861fb21e12c201a5eeb354', '', 'si');
+(2, 'admin', '21232f297a57a5a743894a0e4a801fc3', '', 'si');
 
 -- --------------------------------------------------------
 
