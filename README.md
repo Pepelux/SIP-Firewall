@@ -17,7 +17,7 @@ Download of all components:
 ```
 Install MariaDB and create database and users for Kamailio and web. Please choose strong passwords for all users:
 ```
-# apt-get install mysql-server
+# apt-get install mysql-server python-mysql
 
 # mysql -u root -p
 MariaDB [(none)]> CREATE DATABASE security;
