@@ -50,7 +50,7 @@ Install Kamailio:
 # curl http://deb.kamailio.org/kamailiodebkey.gpg | apt-key add -
 # apt-get update
 
-# apt-get install kamailio kamailio-geoip-modules kamailio-mysql-modules kamailio-tls-modules
+# apt-get install kamailio kamailio-geoip2-modules kamailio-mysql-modules kamailio-tls-modules
 # cd /etc/kamailio
 # cp /usr/local/src/SIP-Firewall/config/kamailio.cfg .
 # cp /usr/local/src/SIP-Firewall/config/kamailio_default /etc/default/kamailio
@@ -73,8 +73,8 @@ modparam("sqlops","sqlcon","cb=>mysql://security:STRONG_WEB_PASSWORD@localhost/s
 
 Download GeoLiteCity database and restart Kamailio:
 ```
-# wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz
-# gzip -d GeoLiteCity.dat.gz
+# wget https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz
+# gzip -d GeoLite2-City.tar.gz
 
 # /etc/init.d/kamailio restart
 ```
